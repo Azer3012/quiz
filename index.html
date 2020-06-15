@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="css-bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css-fontawesome/all.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="register">
+        <h1 class="register-text">qeydiyyat</h1>
+        <input type="text" class="name"  placeholder="Adinizi daxil edin" >
+        <button type="button" class="basla" onclick="basla()">basla</button>
+        
+    </div>
+    
+    <div class="test-container">
+        <div class="test-number">
+            <h3>question <span class="question-num-value"></span> of <span class="total-number"></span></h3>
+        </div>
+        <div class="question"></div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button">
+            <button class="btn btn-primary" onclick="next()">Next</button>
+        </div>
+        <div class="answer-tracker">
+            
+        </div>
+    </div>
+    <div class="end">
+        <div class="box">
+            <h1>
+                test bitti!<br>
+                siz <span class="total-question"></span> sualdan
+                <span class="correct-answer"></span> suali tapa bildiniz
+                bu testi <span class="percent"></span>%-lik netice ile tamamladiniz
+                
+
+            </h1>
+            <button type="button" onclick="tryAgain()">try again</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
